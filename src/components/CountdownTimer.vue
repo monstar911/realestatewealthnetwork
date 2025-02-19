@@ -1,10 +1,16 @@
 <template>
   <section class="countdown-section">
-    <h2 class="hurry-text">Hurry - This Event Will Sell Out Quickly!</h2>
-    <div class="countdown-container">
-      <div v-for="(value, unit) in timeLeft" :key="unit" class="countdown-item">
-        <span class="number">{{ value }}</span>
-        <span class="label">{{ unit.toUpperCase() }}</span>
+    <div class="container">
+      <h2 class="hurry-text">Hurry - This Event Will Sell Out Quickly!</h2>
+      <div class="countdown-container">
+        <div
+          v-for="(value, unit) in timeLeft"
+          :key="unit"
+          class="countdown-item"
+        >
+          <span class="number">{{ value }}</span>
+          <span class="label">{{ unit.toUpperCase() }}</span>
+        </div>
       </div>
     </div>
   </section>
@@ -59,6 +65,7 @@ onUnmounted(() => {
 <style scoped>
 .countdown-section {
   text-align: center;
+  width: 100%;
   margin: var(--section-margin, 2rem 0);
 }
 

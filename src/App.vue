@@ -26,9 +26,15 @@ const deadline = new Date("2024-03-20T23:59:59");
 </script>
 
 <template>
-  <div class="landing-page">
-    <section class="top-section">
-      <div class="top-section-content">
+  <div class="landing-page w-full m-0 p-0 font-lato text-white">
+    <!-- Top Section -->
+    <section
+      class="w-full bg-blend-darken bg-opacity-70 bg-black"
+      style="
+        background-image: url(https://dlbf54swf3l6o.cloudfront.net/images/backgrounds/vintage-grunge-blue-concrete-texture-studio-wall-background-with-vignette.jpg);
+      "
+    >
+      <div class="container">
         <UrgentBanner
           message="This Special 'ALL HANDS' Training Is The Blueprint For Virtual Wholesaling During Uncertain Times..."
         />
@@ -39,12 +45,12 @@ const deadline = new Date("2024-03-20T23:59:59");
       </div>
     </section>
 
-    <section class="main-content">
+    <!-- Main Content -->
+    <section class="flex flex-col items-center w-full">
       <TrustBadges />
 
       <WinningSection />
-
-      <section class="academy-info">
+      <section class="academy-info container">
         <WhatIsSection />
         <VideoSection />
       </section>
@@ -259,51 +265,11 @@ const deadline = new Date("2024-03-20T23:59:59");
   </div>
 </template>
 
-<style scoped>
-.landing-page {
-  /* max-width: 1200px; */
-  margin: 0 auto;
-  padding: 0;
-  /* background-color: #1a3a3a; */
-  color: white;
-  /* font-family: system-ui, -apple-system, sans-serif; */
-  font-family: "Lato", sans-serif !important;
-}
-
-.top-section {
-  background: url(https://dlbf54swf3l6o.cloudfront.net/images/backgrounds/vintage-grunge-blue-concrete-texture-studio-wall-background-with-vignette.jpg);
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: darken;
-}
-.top-section-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  /* padding: 0 2rem; */
-}
-.academy-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.proof-caption {
-  font-style: italic;
-  color: #888;
-}
-
-@media (max-width: 768px) {
-  .academy-info {
-    grid-template-columns: 1fr;
-  }
-}
-
+<style>
 :root {
   --chat-button-bg-color: #c2183f;
   --chat-button-shadow-color: rgba(194, 24, 63, 0.3);
-
   --chat-button-text-color: #ffffff;
-
   --client-bubble-bg: #c2183f;
   --client-transparent-bubble-bg: rgba(194, 24, 63, 0.08);
 }

@@ -136,7 +136,7 @@
 </style> -->
 <template>
   <section class="video-section">
-    <div class="video-wrapper">
+    <div class="container">
       <div class="wistia_responsive_padding">
         <div class="wistia_responsive_wrapper">
           <div
@@ -208,9 +208,11 @@ onMounted(loadWistiaScripts);
   margin: 2rem auto;
 }
 
-.video-wrapper {
-  max-width: 1200px;
+.container {
+  max-width: var(--container-width);
   margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
 }
 
 .wistia_responsive_padding {

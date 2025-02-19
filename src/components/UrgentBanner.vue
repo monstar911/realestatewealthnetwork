@@ -23,5 +23,7 @@ defineProps<{
 
 .urgent-text {
   color: rgb(228, 59, 44);
+  font-weight: 700;
+  font-style: italic;
 }
 </style>

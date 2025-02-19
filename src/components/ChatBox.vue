@@ -9,6 +9,10 @@
     <Transition name="fade">
       <div class="chat-window" v-if="isOpen">
         <div class="chat-header">
+          <div class="chat-header-text">
+            <div class="green-badge"></div>
+            Chat with us!
+          </div>
           <span class="close-btn" @click="closeChat">×</span>
         </div>
 
@@ -102,7 +106,7 @@ export default {
 .chat-box {
   position: fixed;
   bottom: 50%;
-  right: 0;
+  right: -20px;
   z-index: 1000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   transform: translateY(50%);
@@ -148,6 +152,26 @@ export default {
 .chat-header {
   padding: 8px;
   text-align: right;
+  background-color: #dc1431;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-header-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.green-badge {
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+  background-color: #2ecc71;
+  border-radius: 50%;
 }
 
 .close-btn {

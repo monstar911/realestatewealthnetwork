@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* font-family: "Lato", sans-serif !important; */
@@ -19,6 +21,7 @@
   --secondary-color: #ffd700;
   /* --background-color: #1a3a3a; */
   --text-color: #ffffff;
+  --container-width: 1200px;
 }
 
 a {
@@ -85,6 +88,7 @@ button:focus-visible {
 
 #app {
   /* max-width: 1280px; */
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -112,4 +116,12 @@ button:focus-visible {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Container utility class */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
 }
