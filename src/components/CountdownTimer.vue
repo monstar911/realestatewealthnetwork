@@ -2,21 +2,9 @@
   <section class="countdown-section">
     <h2 class="hurry-text">Hurry - This Event Will Sell Out Quickly!</h2>
     <div class="countdown-container">
-      <div class="countdown-item">
-        <span class="number">{{ timeLeft.days }}</span>
-        <span class="label">DAYS</span>
-      </div>
-      <div class="countdown-item">
-        <span class="number">{{ timeLeft.hours }}</span>
-        <span class="label">HOURS</span>
-      </div>
-      <div class="countdown-item">
-        <span class="number">{{ timeLeft.minutes }}</span>
-        <span class="label">MINUTES</span>
-      </div>
-      <div class="countdown-item">
-        <span class="number">{{ timeLeft.seconds }}</span>
-        <span class="label">SECONDS</span>
+      <div v-for="(value, unit) in timeLeft" :key="unit" class="countdown-item">
+        <span class="number">{{ value }}</span>
+        <span class="label">{{ unit.toUpperCase() }}</span>
       </div>
     </div>
   </section>
@@ -44,7 +32,7 @@ const timeLeft = ref<TimeLeft>({
 });
 
 const calculateTimeLeft = () => {
-  const difference = props.deadline.getTime() - new Date().getTime();
+  const difference = props.deadline.getTime() - Date.now();
 
   if (difference > 0) {
     timeLeft.value = {
@@ -71,21 +59,17 @@ onUnmounted(() => {
 <style scoped>
 .countdown-section {
   text-align: center;
-  /* margin: 2rem 0; */
+  margin: var(--section-margin, 2rem 0);
 }
 
 .hurry-text {
-  color: #ffd700;
-  /* margin-bottom: 1rem; */
-
+  color: var(--highlight-color, rgb(255, 277, 0));
   text-align: center;
-  font-size: 34px;
+  font-size: var(--heading-size, 34px);
   font-style: italic;
   line-height: normal;
-  color: rgb(255, 277, 0);
-  clear: both;
-  /* padding-top: 25px; */
   font-weight: 700;
+  clear: both;
 }
 
 .countdown-container {
@@ -95,23 +79,19 @@ onUnmounted(() => {
 }
 
 .countdown-item {
-  color: #ffd700;
-  color: rgb(255, 277, 0);
-  /* background-color: rgba(0, 0, 0, 0.3); */
+  color: var(--highlight-color, rgb(255, 277, 0));
   padding: 1rem;
-  /* border-radius: 8px; */
   min-width: 80px;
 }
 
 .number {
   font-size: 3rem;
-
   font-weight: bold;
   display: block;
 }
 
 .label {
-  color: white;
+  color: var(--text-color, white);
   font-size: 0.8rem;
   opacity: 0.8;
 }

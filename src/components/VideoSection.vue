@@ -136,28 +136,24 @@
 </style> -->
 <template>
   <section class="video-section">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <div class="wistia_responsive_padding">
-          <div class="wistia_responsive_wrapper">
-            <div
-              class="wistia_video_foam_dummy"
-              data-source-container-id=""
-            ></div>
-            <iframe
-              src="https://fast.wistia.net/embed/iframe/idwknzjwun?seo=false&videoFoam=true&resumeable=true"
-              title="Wistia video player"
-              allow="autoplay; fullscreen"
-              allowtransparency="true"
-              frameborder="0"
-              scrolling="no"
-              class="wistia_embed"
-              name="wistia_embed"
-              msallowfullscreen
-              width="100%"
-              height="100%"
-            ></iframe>
-          </div>
+    <div class="video-wrapper">
+      <div class="wistia_responsive_padding">
+        <div class="wistia_responsive_wrapper">
+          <div
+            class="wistia_video_foam_dummy"
+            data-source-container-id=""
+          ></div>
+          <iframe
+            src="https://fast.wistia.net/embed/iframe/idwknzjwun?seo=false&videoFoam=true&resumeable=true"
+            title="Wistia video player"
+            allow="autoplay; fullscreen"
+            allowtransparency="true"
+            frameborder="0"
+            scrolling="no"
+            class="wistia_embed"
+            name="wistia_embed"
+            msallowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
@@ -167,68 +163,79 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 
-const loadWistiaScript = () => {
-  // Load Wistia main script
-  const wistiaScript = document.createElement("script");
-  wistiaScript.id = "wistia-ev";
-  wistiaScript.src = "//fast.wistia.com/assets/external/E-v1.js";
-  wistiaScript.async = true;
+const WISTIA_SCRIPT_ID = "wistia-ev";
+const PLAYBACK_SCRIPT_ID = "wistia-playback";
+const WISTIA_BASE_URL = "//fast.wistia.com/assets/external/E-v1.js";
+const PLAYBACK_SCRIPT_URL =
+  "//dlbf54swf3l6o.cloudfront.net/scripts/wistia-playback-control.js";
 
-  // Load playback control script
-  const playbackScript = document.createElement("script");
-  playbackScript.id = "wistia-playback";
-  playbackScript.src =
-    "//dlbf54swf3l6o.cloudfront.net/scripts/wistia-playback-control.js";
-  playbackScript.async = true;
+const loadScript = (id: string, src: string): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    if (document.getElementById(id)) {
+      resolve();
+      return;
+    }
 
-  // Append scripts only if they don't exist
-  if (!document.getElementById("wistia-ev")) {
-    document.body.appendChild(wistiaScript);
-  }
-  if (!document.getElementById("wistia-playback")) {
-    document.body.appendChild(playbackScript);
+    const script = document.createElement("script");
+    script.id = id;
+    script.src = src;
+    script.async = true;
+
+    script.onload = () => resolve();
+    script.onerror = (error) => reject(error);
+
+    document.body.appendChild(script);
+  });
+};
+
+const loadWistiaScripts = async () => {
+  try {
+    await Promise.all([
+      loadScript(WISTIA_SCRIPT_ID, WISTIA_BASE_URL),
+      loadScript(PLAYBACK_SCRIPT_ID, PLAYBACK_SCRIPT_URL),
+    ]);
+  } catch (error) {
+    console.error("Failed to load Wistia scripts:", error);
   }
 };
 
-onMounted(loadWistiaScript);
+onMounted(loadWistiaScripts);
 </script>
 
 <style scoped>
 .video-section {
-  /* max-width: 800px; */
   width: 100%;
   margin: 2rem auto;
 }
 
+.video-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .wistia_responsive_padding {
-  padding: 56.25% 0 0 0;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
   position: relative;
 }
 
 .wistia_responsive_wrapper {
-  height: 100%;
-  left: 0;
   position: absolute;
   top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
 }
 
 .wistia_video_foam_dummy {
-  border: 0;
-  display: block;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  position: static;
-  visibility: hidden;
-  width: auto;
+  display: none;
 }
 
 .wistia_embed {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 </style>
