@@ -125,3 +125,19 @@ img {
   padding: 0 1rem;
   width: 100%;
 }
+
+.text-white {
+  color: white;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
