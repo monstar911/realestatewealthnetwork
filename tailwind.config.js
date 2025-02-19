@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx,html,vue}", // adjust paths based on your project structure
+  ],
   // darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

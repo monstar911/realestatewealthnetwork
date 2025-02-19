@@ -141,3 +141,18 @@ img {
 .mt-4 {
   margin-top: 1rem;
 }
+
+.font-family {
+  font-family: "Patrik", sans-serif !important;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.academy-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}

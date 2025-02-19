@@ -1,32 +1,31 @@
 <template>
-  <section class="video-section">
+  <section class="w-full my-8">
     <div
       id="col-left-103-112"
-      class="col-md-6 innerContent col_left ui-resizable"
-      style="outline: none"
+      class="col-md-6 innerContent col_left ui-resizable outline-none"
     >
       <div
-        class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
-        style="padding: 0 10px"
+        class="col-inner bg-cover border-0 border-solid border-3 rounded-none shadow-none py-0 mt-0 px-[10px]"
       >
         <div
-          class="de elVideoWrapper de-video-block elVideoWidth100 elMargin0 ui-droppable de-editable"
+          class="de elVideoWrapper de-video-block w-full m-0 ui-droppable de-editable mt-[30px] outline-none cursor-pointer"
           data-video-type="wistia"
-          style="margin-top: 30px; outline: none; cursor: pointer"
           data-wistia-url="https://camerondirect-1.wistia.com/medias/cgaql4wt0t"
           data-wistia-autoplay="yes"
         >
-          <div class="elVideoplaceholder">
-            <div class="elVideoplaceholder_inner"></div>
+          <div class="relative pb-[56.25%] pt-[25px] h-0 mb-0 z-[1]">
+            <div
+              class="absolute top-0 w-full h-full box-border bg-[#2b2b2b] border border-black/20 text-center bg-[url('/images/videoplaceholderbg.png')] bg-center bg-no-repeat shadow-[inset_0_0_0_1px_rgba(255,255,255,0.3)]"
+            ></div>
           </div>
-          <div class="elVideo" style="display: none">
+          <div class="hidden">
             <iframe
               width="640"
               height="360"
               allow="autoplay; fullscreen"
               src="https://fast.wistia.net/embed/iframe/cgaql4wt0t?muted=true&amp;autoplay=1&amp;&amp;wmode=transparent"
               allowtransparency="true"
-              class="wistia_embed"
+              class="w-full h-full absolute top-0"
               name="wistia_embed"
               wmode="opaque"
             >
@@ -34,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="subImageCpy">
+      <div class="text-black">
         We have the documentation to prove it, in the form of HUD statements.
         Don't miss out on this incredible opportunity.
       </div>
@@ -72,97 +71,32 @@ onMounted(loadWistiaScript);
 </script>
 
 <style scoped>
-.video-section {
-  /* max-width: 800px; */
-  width: 100%;
-  margin: 2rem auto;
-}
-.elVideoplaceholder {
-  position: relative;
-  padding-bottom: 56.25% !important;
-  padding-top: 25px !important;
-  height: 0;
-  margin-bottom: 0px;
-  z-index: 1;
-}
-.elVideoplaceholder_inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #2b2b2b;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  text-align: center;
-  background-image: url(/images/videoplaceholderbg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-  -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-}
-.subImageCpy {
-  color: black;
-}
+/* Some styles that can't be directly converted to Tailwind */
 .elVideoWrapper {
-  display: none !important;
+  @apply hidden;
 }
-.elVideoWidth100 {
-  width: 100% !important;
-}
-.elMargin0 {
-  margin-top: 0px;
-}
+
 .de-editable {
-  position: relative;
+  @apply relative cursor-auto;
 }
-.de-editable {
-  cursor: auto !important;
-}
-.de-video-block {
-  width: 100% !important;
-}
+
 .wistia_responsive_padding {
-  padding: 56.25% 0 0 0;
-  position: relative;
+  @apply pt-[56.25%] relative;
 }
 
 .wistia_responsive_wrapper {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  @apply h-full absolute w-full;
 }
 
 .wistia_video_foam_dummy {
-  border: 0;
-  display: block;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  position: static;
-  visibility: hidden;
-  width: auto;
-}
-
-.wistia_embed {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  @apply border-0 block static invisible w-auto;
 }
 
 .elVideo {
-  position: relative;
-  overflow: hidden;
+  @apply relative overflow-hidden block;
 }
-.elVideo,
+
 .elAudio {
-  display: block !important;
+  @apply block;
 }
 </style>

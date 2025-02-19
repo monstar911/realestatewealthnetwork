@@ -1,7 +1,7 @@
 <template>
-  <section class="winning-section">
+  <section class="w-full">
     <div class="container">
-      <div class="image-container">
+      <div class="block w-1/2 max-w-[750px] mx-auto my-[30px]">
         <img
           src="https://dlbf54swf3l6o.cloudfront.net/images/logos/Virtual-Wholesale-Academy.jpg"
           alt="Virtual Wholesaling Academy"
@@ -9,32 +9,11 @@
           height="auto"
         />
       </div>
-      <div class="winning-title">
+      <div
+        class="text-black px-[50px] pb-[10px] text-center font-medium text-xl italic"
+      >
         <b>Winning the Game Of Money By Creating Your Own Economy!</b>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-.winning-section {
-  width: 100%;
-}
-
-.image-container {
-  display: block;
-  margin: 30px auto;
-  width: 50%;
-  max-width: 750px;
-}
-
-.winning-title {
-  color: black;
-  padding: 0px 50px 10px 50px;
-  text-align: center;
-  /* font-family: "Ubuntu", sans-serif !important; */
-  font-weight: 500;
-  font-size: 20px;
-  font-style: italic;
-}
-</style>

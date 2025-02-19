@@ -1,6 +1,8 @@
 <template>
-  <div class="urgent-banner">
-    <b class="urgent-text">URGENT:</b>
+  <div
+    class="text-white py-[35px] px-[50px] pb-[10px] text-center font-bold text-[22px] italic"
+  >
+    <b class="text-[rgb(228,59,44)] font-bold italic">URGENT:</b>
     {{ message }}
   </div>
 </template>
@@ -10,20 +12,3 @@ defineProps<{
   message: string;
 }>();
 </script>
-
-<style scoped>
-.urgent-banner {
-  color: white;
-  padding: 35px 50px 10px 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 22px;
-  font-style: italic;
-}
-
-.urgent-text {
-  color: rgb(228, 59, 44);
-  font-weight: 700;
-  font-style: italic;
-}
-</style>

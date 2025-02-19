@@ -211,7 +211,7 @@ onMounted(loadWistiaScripts);
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1rem 0 1rem;
   width: 100%;
 }
 

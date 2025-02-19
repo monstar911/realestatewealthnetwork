@@ -1,15 +1,21 @@
 <template>
-  <section class="countdown-section">
+  <section class="w-full text-center my-8">
     <div class="container">
-      <h2 class="hurry-text">Hurry - This Event Will Sell Out Quickly!</h2>
-      <div class="countdown-container">
+      <h2
+        class="text-[var(--highlight-color,rgb(255,277,0))] text-[34px] text-center italic font-bold leading-normal clear-both"
+      >
+        Hurry - This Event Will Sell Out Quickly!
+      </h2>
+      <div class="flex justify-center gap-4">
         <div
           v-for="(value, unit) in timeLeft"
           :key="unit"
-          class="countdown-item"
+          class="text-[var(--highlight-color,rgb(255,277,0))] p-4 min-w-[80px]"
         >
-          <span class="number">{{ value }}</span>
-          <span class="label">{{ unit.toUpperCase() }}</span>
+          <span class="text-5xl font-bold block">{{ value }}</span>
+          <span class="text-[var(--text-color,white)] text-sm opacity-80">{{
+            unit.toUpperCase()
+          }}</span>
         </div>
       </div>
     </div>
@@ -63,43 +69,5 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.countdown-section {
-  text-align: center;
-  width: 100%;
-  margin: var(--section-margin, 2rem 0);
-}
-
-.hurry-text {
-  color: var(--highlight-color, rgb(255, 277, 0));
-  text-align: center;
-  font-size: var(--heading-size, 34px);
-  font-style: italic;
-  line-height: normal;
-  font-weight: 700;
-  clear: both;
-}
-
-.countdown-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.countdown-item {
-  color: var(--highlight-color, rgb(255, 277, 0));
-  padding: 1rem;
-  min-width: 80px;
-}
-
-.number {
-  font-size: 3rem;
-  font-weight: bold;
-  display: block;
-}
-
-.label {
-  color: var(--text-color, white);
-  font-size: 0.8rem;
-  opacity: 0.8;
-}
+/* Converted to Tailwind classes */
 </style>

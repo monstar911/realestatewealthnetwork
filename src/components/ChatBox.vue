@@ -1,38 +1,68 @@
 <template>
-  <div class="chat-box" :class="{ 'chat-box-open': isOpen }">
+  <div
+    class="fixed bottom-1/2 right-[-20px] z-[1000] font-sans translate-y-1/2"
+    :class="{ 'chat-box-open': isOpen }"
+  >
     <!-- Chat Toggle Button - Only show when chat is closed -->
-    <button class="chat-toggle" @click="openChat" v-if="!isOpen">
-      <span class="chat-toggle-text">Chat with us!</span>
+    <button
+      class="bg-[#dc1431] text-white border-none py-4 px-2 rounded-l-md cursor-pointer font-medium text-sm shadow-sm [writing-mode:vertical-rl] rotate-180"
+      @click="openChat"
+      v-if="!isOpen"
+    >
+      <span class="inline-block whitespace-nowrap">Chat with us!</span>
     </button>
 
     <!-- Chat Window -->
     <Transition name="fade">
-      <div class="chat-window" v-if="isOpen">
-        <div class="chat-header">
-          <div class="chat-header-text">
-            <div class="green-badge"></div>
+      <div
+        class="absolute right-10 top-1/2 w-80 h-[480px] bg-white rounded-lg shadow-lg flex flex-col text-gray-800 -translate-y-1/2 visible backface-hidden [will-change:transform,opacity,visibility]"
+        v-if="isOpen"
+      >
+        <div
+          class="p-2 text-right bg-[#dc1431] rounded-t-lg flex items-center justify-between"
+        >
+          <div class="flex items-center gap-2">
+            <div
+              class="min-w-[10px] min-h-[10px] max-w-[10px] max-h-[10px] bg-[#2ecc71] rounded-full"
+            ></div>
             Chat with us!
           </div>
-          <span class="close-btn" @click="closeChat">×</span>
+          <span
+            class="text-2xl cursor-pointer text-gray-600 px-3 py-1"
+            @click="closeChat"
+            >×</span
+          >
         </div>
 
         <!-- Agents Section -->
-        <div class="agents-section">
-          <div class="agent" v-for="agent in agents" :key="agent.id">
-            <div class="agent-circle">
-              <span>{{ agent.name.charAt(0) }}</span>
-              <div class="status-dot"></div>
+        <div class="px-5 pb-5 flex gap-[30px] justify-center">
+          <div
+            class="text-center relative"
+            v-for="agent in agents"
+            :key="agent.id"
+          >
+            <div
+              class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-[5px] relative"
+            >
+              <span class="text-xl text-gray-600">{{
+                agent.name.charAt(0)
+              }}</span>
+              <div
+                class="w-2 h-2 bg-[#2ecc71] rounded-full absolute bottom-0.5 right-0.5 border-2 border-white"
+              ></div>
             </div>
-            <div class="agent-name">{{ agent.name }}</div>
+            <div class="text-sm text-gray-800">{{ agent.name }}</div>
           </div>
         </div>
 
         <!-- Welcome Message -->
-        <div class="welcome-message">
-          <p class="help-text">We are here to help!</p>
+        <div
+          class="p-5 flex-grow overflow-y-auto text-sm leading-relaxed border-t border-gray-200"
+        >
+          <p class="text-center mb-5 font-medium">We are here to help!</p>
 
-          <div class="hours-info">
-            <h4>Holiday Hours</h4>
+          <div class="my-4">
+            <h4 class="mb-2.5 font-semibold">Holiday Hours</h4>
             <p v-for="(hour, index) in holidayHours" :key="index">
               {{ hour }}
             </p>
@@ -44,21 +74,30 @@
             <p>Weekends: Limited support primarily via email</p>
           </div>
 
-          <div class="powered-by">
+          <div class="text-center text-gray-400 text-xs mt-5">
             <small>We run on Chatra</small>
           </div>
         </div>
 
         <!-- Chat Input -->
-        <div class="chat-input">
+        <div class="p-3 border-t border-gray-200 flex gap-2 items-center">
           <input
             type="text"
             placeholder="Message..."
             v-model="message"
             @keyup.enter="sendMessage"
+            class="flex-grow px-3 py-2 border border-gray-300 rounded focus:border-[#dc1431] text-sm outline-none"
           />
-          <button class="emoji-btn">😊</button>
-          <button class="send-btn">→</button>
+          <button
+            class="bg-transparent border-none cursor-pointer text-lg text-gray-600 p-1 hover:text-[#dc1431]"
+          >
+            😊
+          </button>
+          <button
+            class="bg-transparent border-none cursor-pointer text-lg text-gray-600 p-1 hover:text-[#dc1431]"
+          >
+            →
+          </button>
         </div>
       </div>
     </Transition>
@@ -103,197 +142,7 @@ export default {
 </script>
 
 <style scoped>
-.chat-box {
-  position: fixed;
-  bottom: 50%;
-  right: -20px;
-  z-index: 1000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  transform: translateY(50%);
-}
-
-.chat-toggle {
-  background-color: #dc1431;
-  color: white;
-  border: none;
-  padding: 16px 8px;
-  border-radius: 4px 0 0 4px;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 14px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-}
-
-.chat-toggle-text {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.chat-window {
-  position: absolute;
-  right: 40px;
-  top: 50%;
-  width: 320px;
-  height: 480px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  color: #333;
-  transform: translateY(-50%);
-  visibility: visible;
-  backface-visibility: hidden;
-  will-change: transform, opacity, visibility;
-}
-
-.chat-header {
-  padding: 8px;
-  text-align: right;
-  background-color: #dc1431;
-  border-radius: 8px 8px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.chat-header-text {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.green-badge {
-  min-width: 10px;
-  min-height: 10px;
-  max-width: 10px;
-  max-height: 10px;
-  background-color: #2ecc71;
-  border-radius: 50%;
-}
-
-.close-btn {
-  font-size: 24px;
-  cursor: pointer;
-  color: #666;
-  padding: 4px 12px;
-}
-
-.agents-section {
-  padding: 0 20px 20px;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.agent {
-  text-align: center;
-  position: relative;
-}
-
-.agent-circle {
-  width: 48px;
-  height: 48px;
-  background: #f0f0f0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5px;
-  position: relative;
-}
-
-.agent-circle span {
-  font-size: 20px;
-  color: #666;
-}
-
-.agent-name {
-  font-size: 13px;
-  color: #333;
-}
-
-.status-dot {
-  width: 8px;
-  height: 8px;
-  background: #2ecc71;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  border: 2px solid white;
-}
-
-.welcome-message {
-  padding: 20px;
-  flex-grow: 1;
-  overflow-y: auto;
-  font-size: 14px;
-  line-height: 1.5;
-  border-top: 1px solid #eee;
-}
-
-.help-text {
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-.hours-info {
-  margin: 15px 0;
-}
-
-.hours-info h4 {
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-.powered-by {
-  text-align: center;
-  color: #999;
-  font-size: 12px;
-  margin-top: 20px;
-}
-
-.chat-input {
-  padding: 12px;
-  border-top: 1px solid #eee;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.chat-input input {
-  flex-grow: 1;
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px;
-  outline: none;
-}
-
-.chat-input input:focus {
-  border-color: #dc1431;
-}
-
-.emoji-btn,
-.send-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  color: #666;
-  padding: 4px;
-}
-
-.emoji-btn:hover,
-.send-btn:hover {
-  color: #dc1431;
-}
-
-/* Update the animation styles */
+/* Animation styles */
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
