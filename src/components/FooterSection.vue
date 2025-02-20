@@ -12,15 +12,3 @@
     </footer>
   </section>
 </template>
-
-<style scoped>
-@media (max-width: 768px) {
-  .reviews-images {
-    @apply flex-col items-center;
-  }
-
-  .reviews-images img {
-    @apply max-w-full;
-  }
-}
-</style>

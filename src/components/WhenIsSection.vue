@@ -1,40 +1,42 @@
 <template>
   <section class="p-8 text-[#2f2f2f] text-left text-3xl">
     <div class="py-5 m-0 outline-none">
-      <div class="col-md-6 innerContent col_left ui-resizable outline-none">
+      <div class="col-md-6 innerContent col_right ui-resizable">
         <div class="px-[10px]">
-          <div class="mt-[35px] outline-none cursor-pointer text-center">
-            <div
-              class="bg-[#30a05c] w-fit p-4 px-8 rounded-lg my-4 text-center relative text-black font-[Verdana] font-black"
+          <div class="mt-0 outline-none cursor-pointer">
+            <h1 class="text-left text-[32px] text-[#2f2f2f]">
+              <b>WHEN Is The Virtual Wholesaling Academy</b>
+            </h1>
+          </div>
+          <div
+            class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
+          >
+            <h2 class="text-left text-xl text-[#2f2f2f]">
+              <p>
+                This three-day LIVE training is happening on March 18th thru
+                20th, 2025 from about 12pm to 6pm ET. It's not like any Zoom
+                meeting you've been to before.
+              </p>
+              <p>
+                It's live & interactive, which means we can explore topics in
+                detail. We've got tools and handouts to give you, plus we're
+                also giving away hundreds of dollars in prizes throughout the
+                event too!
+              </p>
+            </h2>
+          </div>
+          <div class="mt-[35px] outline-none cursor-pointer text-left">
+            <a
+              href="setup.php"
+              class="block text-white bg-[#30a05c] text-xl rounded px-6 py-2.5 shadow"
+              rel="noopener noreferrer"
+              id="undefined-127-153-205"
             >
-              <img
-                data-src="//dlbf54swf3l6o.cloudfront.net/images/misc/vwacalendar-blank.webp"
-                data-fallback="//dlbf54swf3l6o.cloudfront.net/images/misc/vwacalendar-blank.jpg"
-                class="lazy"
-                alt="Real Estate Wealth Summit - Event Date"
-                width="300"
-                src="//dlbf54swf3l6o.cloudfront.net/images/misc/vwacalendar-blank.webp"
-              />
-              <div
-                class="text-black text-[36px] font-bold absolute top-[40px] left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >
-                March
-              </div>
-              <div
-                class="text-black text-[65px] font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              >
-                18<span>-</span>20
-              </div>
-            </div>
+              <CallToAction />
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-h2 {
-  @apply text-[var(--primary-color)];
-}
-</style>

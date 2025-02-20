@@ -20,7 +20,7 @@ import FaqSection from "./components/FaqSection.vue";
 import FooterSection from "./components/FooterSection.vue";
 import FindSection from "./components/FindSection.vue";
 import ChatBox from "./components/ChatBox.vue";
-
+import CalandarSection from "./components/CalandarSection.vue";
 const deadline = new Date("2024-03-20T23:59:59");
 </script>
 
@@ -54,47 +54,12 @@ const deadline = new Date("2024-03-20T23:59:59");
         <VideoSection />
       </section>
 
-      <section class="academy-info">
+      <section class="academy-info container">
+        <CalandarSection />
         <WhenIsSection />
-        <div class="col-md-6 innerContent col_right ui-resizable outline-none">
-          <div class="px-[10px]">
-            <div class="mt-0 outline-none cursor-pointer">
-              <h1 class="text-left text-[32px] text-[#2f2f2f]">
-                <b>WHEN Is The Virtual Wholesaling Academy</b>
-              </h1>
-            </div>
-            <div
-              class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
-            >
-              <h2 class="text-left text-xl text-[#2f2f2f]">
-                <p>
-                  This three-day LIVE training is happening on March 18th thru
-                  20th, 2025 from about 12pm to 6pm ET. It's not like any Zoom
-                  meeting you've been to before.
-                </p>
-                <p>
-                  It's live & interactive, which means we can explore topics in
-                  detail. We've got tools and handouts to give you, plus we're
-                  also giving away hundreds of dollars in prizes throughout the
-                  event too!
-                </p>
-              </h2>
-            </div>
-            <div class="mt-[35px] outline-none cursor-pointer text-left">
-              <a
-                href="setup.php"
-                class="block text-white bg-[#30a05c] text-xl rounded px-6 py-2.5 shadow"
-                rel="noopener noreferrer"
-                id="undefined-127-153-205"
-              >
-                <CallToAction />
-              </a>
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section class="academy-info">
+      <section class="academy-info container">
         <VideoSection />
         <VideoSection />
       </section>
@@ -106,7 +71,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         Don't miss out on this incredible opportunity.
       </p>
 
-      <section class="academy-info">
+      <section class="academy-info container">
         <HostSection />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/cameron/cam-brick-wall.webp"
@@ -118,12 +83,12 @@ const deadline = new Date("2024-03-20T23:59:59");
         />
       </section>
 
-      <section class="academy-info">
+      <section class="academy-info container">
         <VideoSection />
         <VideoSection />
       </section>
 
-      <section class="academy-info">
+      <section class="academy-info container">
         <MakeMoneySection />
         <div class="col-md-6 innerContent col_right ui-resizable outline-none">
           <div class="px-[10px]">
@@ -158,7 +123,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         </div>
       </section>
 
-      <section class="academy-info">
+      <section class="academy-info container">
         <TopicsSection />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/cold-calling.webp"
@@ -169,7 +134,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         />
       </section>
 
-      <section class="academy-info">
+      <section class="academy-info container">
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.webp"
           data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.png"
@@ -180,7 +145,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         <AutomationSection />
       </section>
 
-      <section class="academy-info">
+      <section class="academy-info container">
         <FindSection />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/msdf_still1.webp"
@@ -191,7 +156,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         />
       </section>
 
-      <section class="academy-info">
+      <section class="academy-info container">
         <VideoSection />
         <VideoSection />
       </section>

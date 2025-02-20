@@ -126,30 +126,6 @@ img {
   width: 100%;
 }
 
-.text-white {
-  color: white;
-}
-
-.font-bold {
-  font-weight: bold;
-}
-
-.font-normal {
-  font-weight: normal;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.font-family {
-  font-family: "Patrik", sans-serif !important;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .academy-info {
   @apply w-full grid 3xl:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 gap-8 my-8 items-center;
 }
