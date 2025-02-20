@@ -16,6 +16,12 @@ module.exports = {
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
+        "patrick-hand": [
+          '"Patrick Hand"',
+          "Helvetica",
+          "sans-serif",
+          "!important",
+        ],
       },
       backgroundColor: {
         "custom-dark": "#1a3a3a",

@@ -8,7 +8,6 @@ import TrustBadges from "./components/TrustBadges.vue";
 import WhatIsSection from "./components/WhatIsSection.vue";
 import WhenIsSection from "./components/WhenIsSection.vue";
 import WhyNowSection from "./components/WhyNowSection.vue";
-import FundingSection from "./components/FundingSection.vue";
 import HostSection from "./components/HostSection.vue";
 import TopicsSection from "./components/TopicsSection.vue";
 import AutomationSection from "./components/AutomationSection.vue";

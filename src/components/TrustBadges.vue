@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-[rgb(96,96,96)] text-center py-8 flex justify-center items-center w-full"
+    class="bg-[rgb(96,96,96)] text-center py-6 flex justify-center items-center w-full"
   >
     <div class="container">
       <div

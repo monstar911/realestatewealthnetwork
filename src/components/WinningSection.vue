@@ -1,7 +1,7 @@
 <template>
   <section class="w-full">
     <div class="container">
-      <div class="block max-w-[750px] mx-auto my-[30px]">
+      <div class="block max-w-[750px] mx-auto mt-[30px] mb-[4px]">
         <img
           src="https://dlbf54swf3l6o.cloudfront.net/images/logos/Virtual-Wholesale-Academy.jpg"
           alt="Virtual Wholesaling Academy"
