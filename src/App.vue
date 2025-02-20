@@ -61,8 +61,8 @@ const deadline = new Date("2024-03-20T23:59:59");
       </section>
 
       <section class="section-grid section-container">
-        <VideoSection />
-        <VideoSection />
+        <SectionVideo />
+        <SectionVideo />
       </section>
 
       <Section09Why class="section-container" />

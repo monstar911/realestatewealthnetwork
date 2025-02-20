@@ -133,5 +133,5 @@ img {
 }
 
 .section-grid {
-  @apply w-full grid 3xl:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8 my-8 items-center;
+  @apply w-full grid 3xl:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8 my-4 items-center;
 }
