@@ -20,5 +20,11 @@
         do deals immediately during this training.
       </p>
     </h2>
+
+    <SectionReady />
   </section>
 </template>
+
+<script setup lang="ts">
+import SectionReady from "./Section-Ready.vue";
+</script>

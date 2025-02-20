@@ -12,7 +12,7 @@
       <div
         class="text-black px-[50px] pb-[10px] text-center font-medium text-xl italic"
       >
-        <b>Winning the Game Of Money By Creating Your Own Economy!</b>
+        <!-- <b>Winning the Game Of Money By Creating Your Own Economy!</b> -->
       </div>
     </div>
   </section>
