@@ -1,6 +1,6 @@
 <template>
   <section class="w-full my-8">
-    <div class="max-w-[var(--container-width)] mx-auto px-4 w-full">
+    <div class="max-w-[var(--container-width)] mx-auto px-0 w-full">
       <div class="relative pt-[56.25%]">
         <div class="absolute top-0 left-0 h-full w-full">
           <div class="hidden" data-source-container-id=""></div>
