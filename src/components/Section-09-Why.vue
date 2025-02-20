@@ -33,10 +33,10 @@
         </p>
       </h2>
     </div>
-    <CallToAction />
+    <SectionReady />
   </section>
 </template>
 
 <script setup lang="ts">
-import CallToAction from "./CallToAction.vue";
+import SectionReady from "./Section-Ready.vue";
 </script>

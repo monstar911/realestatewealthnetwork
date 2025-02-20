@@ -1,8 +1,8 @@
 <template>
-  <section class="section-text">
+  <section class="section-image">
     <div class="outline-none cursor-pointer">
       <div
-        class="bg-[#30a05c] w-fit p-4 px-8 rounded-lg my-4 text-center relative text-black font-[Verdana] font-black"
+        class="w-fit p-4 px-8 rounded-lg my-4 text-center relative text-black font-[Verdana] font-black"
       >
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/misc/vwacalendar-blank.webp"
@@ -13,7 +13,7 @@
           src="//dlbf54swf3l6o.cloudfront.net/images/misc/vwacalendar-blank.webp"
         />
         <div
-          class="text-black text-[36px] font-bold absolute top-[40px] left-1/2 -translate-x-1/2 -translate-y-1/2"
+          class="text-black text-[36px] font-bold absolute top-[60px] left-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           March
         </div>

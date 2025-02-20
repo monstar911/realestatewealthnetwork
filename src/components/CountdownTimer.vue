@@ -7,7 +7,7 @@
         Hurry - This Event Will Sell Out Quickly!
       </h2>
       <div
-        class="flex justify-center 3xl:gap-4 xl:gap-4 lg:gap-4 md:gap-4 sm:gap-1"
+        class="flex justify-center 3xl:gap-4 2xl:gap-4 xl:gap-4 lg:gap-4 md:gap-4 sm:gap-1"
       >
         <div
           v-for="(value, unit) in timeLeft"
@@ -69,7 +69,3 @@ onUnmounted(() => {
   clearInterval(timer);
 });
 </script>
-
-<style scoped>
-/* Converted to Tailwind classes */
-</style>

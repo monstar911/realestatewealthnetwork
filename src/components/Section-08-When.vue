@@ -28,12 +28,12 @@
         rel="noopener noreferrer"
         id="undefined-127-153-205"
       >
-        <CallToAction />
+        <SectionReady />
       </a>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import CallToAction from "./CallToAction.vue";
+import SectionReady from "./Section-Ready.vue";
 </script>

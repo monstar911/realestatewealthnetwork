@@ -120,6 +120,10 @@ img {
   @apply text-[#2f2f2f] text-left text-3xl p-4 outline-none;
 }
 
+.section-image {
+  @apply flex justify-center;
+}
+
 .section-grid {
   @apply w-full grid 3xl:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8 my-8 items-center;
 }

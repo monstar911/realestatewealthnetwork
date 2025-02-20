@@ -22,10 +22,5 @@
         </p>
       </h2>
     </div>
-    <CallToAction />
   </section>
 </template>
-
-<script setup lang="ts">
-import CallToAction from "./CallToAction.vue";
-</script>

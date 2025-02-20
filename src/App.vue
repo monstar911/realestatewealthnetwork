@@ -1,61 +1,63 @@
 <script setup lang="ts">
-import UrgentBanner from "./components/UrgentBanner.vue";
-import MainHeading from "./components/MainHeading.vue";
-import VideoSection from "./components/VideoSection.vue";
-import CallToAction from "./components/CallToAction.vue";
-import ProfitText from "./components/ProfitText.vue";
-import TrustBadges from "./components/TrustBadges.vue";
-import WhatIsSection from "./components/WhatIsSection.vue";
-import WhenIsSection from "./components/WhenIsSection.vue";
-import WhyNowSection from "./components/WhyNowSection.vue";
-import HostSection from "./components/HostSection.vue";
-import TopicsSection from "./components/TopicsSection.vue";
-import AutomationSection from "./components/AutomationSection.vue";
-import WinningSection from "./components/WinningSection.vue";
-import MakeMoneySection from "./components/MakeMoney.vue";
-import VideoSectionHUD from "./components/VideoSectionHUD.vue";
-import ReviewsSection from "./components/ReviewsSection.vue";
-import FaqSection from "./components/FaqSection.vue";
-import FooterSection from "./components/FooterSection.vue";
-import FindSection from "./components/FindSection.vue";
+import SectionVideo from "./components/Section-Video.vue";
+import SectionReady from "./components/Section-Ready.vue";
+import Section01UrgentBanner from "./components/Section-01-UrgentBanner.vue";
+import Section02MainHeading from "./components/Section-02-MainHeading.vue";
+import Section03ProfitText from "./components/Section-03-ProfitText.vue";
+import Section04TrustBadges from "./components/Section-04-TrustBadges.vue";
+import Section05Winning from "./components/Section-05-Winning.vue";
+import Section06What from "./components/Section-06-What.vue";
+import Section07Calandar from "./components/Section-07-Calandar.vue";
+import Section08When from "./components/Section-08-When.vue";
+import Section09Why from "./components/Section-09-Why.vue";
+import Section10Give from "./components/Section-10-Give.vue";
+import Section11Host from "./components/Section-11-Host.vue";
+import Section12MakeMoney from "./components/Section-12-MakeMoney.vue";
+import Section13Seller from "./components/Section-13-Seller.vue";
+import Section14Business from "./components/Section-14-Business.vue";
+import Section15Find from "./components/Section-15-Find.vue";
+import Section16Reviews from "./components/Section-16-Reviews.vue";
+import Section17Faq from "./components/Section-17-Faq.vue";
+import Section99Footer from "./components/Section-99-Footer.vue";
 import ChatBox from "./components/ChatBox.vue";
-import CalandarSection from "./components/CalandarSection.vue";
 const deadline = new Date("2024-03-20T23:59:59");
 </script>
 
 <template>
+  <ChatBox />
+
   <div class="landing-page w-full m-0 p-0 font-lato text-white">
     <!-- Top Section -->
     <section
-      class="w-full bg-blend-darken bg-opacity-70 bg-black"
+      class="w-full bg-blend-darken bg-opacity-80 bg-black"
       style="
         background-image: url(https://dlbf54swf3l6o.cloudfront.net/images/backgrounds/vintage-grunge-blue-concrete-texture-studio-wall-background-with-vignette.jpg);
       "
     >
       <div class="section-container">
-        <UrgentBanner
+        <Section01UrgentBanner
           message="This Special 'ALL HANDS' Training Is The Blueprint For Virtual Wholesaling During Uncertain Times..."
         />
-        <MainHeading />
-        <VideoSection />
-        <CallToAction />
-        <ProfitText />
+        <Section02MainHeading />
+        <SectionVideo />
+        <SectionReady />
+        <Section03ProfitText />
       </div>
     </section>
 
-    <!-- Main Content -->
+    <Section04TrustBadges />
+    <Section05Winning />
+
+    <!-- Main Contents -->
     <section class="flex flex-col items-center w-full">
-      <TrustBadges />
-
-      <WinningSection />
       <section class="section-grid section-container">
-        <WhatIsSection />
-        <VideoSection />
+        <Section06What />
+        <SectionVideo />
       </section>
 
       <section class="section-grid section-container">
-        <CalandarSection />
-        <WhenIsSection />
+        <Section07Calandar />
+        <Section08When />
       </section>
 
       <section class="section-grid section-container">
@@ -63,7 +65,12 @@ const deadline = new Date("2024-03-20T23:59:59");
         <VideoSection />
       </section>
 
-      <WhyNowSection class="section-container" />
+      <Section09Why class="section-container" />
+
+      <section class="section-grid section-container">
+        <SectionVideo />
+        <Section10Give />
+      </section>
 
       <p class="proof-caption">
         We have the documentation to prove it, in the form of HUD statements.
@@ -71,101 +78,89 @@ const deadline = new Date("2024-03-20T23:59:59");
       </p>
 
       <section class="section-grid section-container">
-        <HostSection />
-        <img
-          data-src="//dlbf54swf3l6o.cloudfront.net/images/cameron/cam-brick-wall.webp"
-          data-fallback="//dlbf54swf3l6o.cloudfront.net/images/cameron/cam-brick-wall.jpg"
-          class="effect1 lazy"
-          alt="Cam Dunlap"
-          width="400"
-          src="//dlbf54swf3l6o.cloudfront.net/images/cameron/cam-brick-wall.webp"
-        />
-      </section>
-
-      <section class="section-grid section-container">
-        <VideoSection />
-        <VideoSection />
-      </section>
-
-      <section class="section-grid section-container">
-        <MakeMoneySection />
-        <div class="col-md-6 innerContent col_right ui-resizable outline-none">
-          <div class="px-[10px]">
-            <div class="mt-0 outline-none cursor-pointer">
-              <h1 class="text-left text-[32px] text-[#2f2f2f]">
-                <b>3 Ways To Make Money With Any Wholesale Lead</b>
-              </h1>
-            </div>
-            <div
-              class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
-            >
-              <h2 class="text-left text-xl text-[#2f2f2f]">
-                <p>
-                  As a virtual wholesaler you'll be able to cherry pick deals.
-                  In this session, we will explore strategies for making a
-                  profit from properties that might not initially seem perfect
-                  for a wholesale deal.
-                </p>
-                <p>
-                  You'll learn how to identify and implement alternative
-                  opportunities for making the most out of every lead.
-                </p>
-                <p>
-                  This approach ensures that you can still earn from properties
-                  even when they don't fit into a traditional wholesale box,
-                  broadening your business scope and enhancing your investment
-                  portfolio.
-                </p>
-              </h2>
-            </div>
-          </div>
+        <Section11Host />
+        <div class="section-image">
+          <img
+            data-src="//dlbf54swf3l6o.cloudfront.net/images/cameron/cam-brick-wall.webp"
+            data-fallback="//dlbf54swf3l6o.cloudfront.net/images/cameron/cam-brick-wall.jpg"
+            class="effect1 lazy"
+            alt="Cam Dunlap"
+            width="400"
+            src="//dlbf54swf3l6o.cloudfront.net/images/cameron/cam-brick-wall.webp"
+          />
         </div>
       </section>
 
       <section class="section-grid section-container">
-        <TopicsSection />
-        <img
-          data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/cold-calling.webp"
-          data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/cold-calling.jpg"
-          class="effect1 lazy"
-          alt="Cold Calling"
-          src="//dlbf54swf3l6o.cloudfront.net/images/funnels/cold-calling.webp"
-        />
+        <SectionVideo />
+        <SectionVideo />
       </section>
 
       <section class="section-grid section-container">
-        <img
-          data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.webp"
-          data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.png"
-          class="effect1 lazy"
-          alt="Automate Your Business"
-          src="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.webp"
-        />
-        <AutomationSection />
+        <div class="section-image">
+          <img
+            data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/investor-thoughts.webp"
+            data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/investor-thoughts.jpg"
+            class="lazy w-4/5"
+            alt="Investor Thoughts"
+            src="//dlbf54swf3l6o.cloudfront.net/images/funnels/investor-thoughts.webp"
+          />
+        </div>
+        <Section12MakeMoney />
       </section>
 
       <section class="section-grid section-container">
-        <FindSection />
-        <img
-          data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/msdf_still1.webp"
-          data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/msdf_still1.png"
-          class="effect1 lazy"
-          alt="Hungry Buyers"
-          src="//dlbf54swf3l6o.cloudfront.net/images/funnels/msdf_still1.webp"
-        />
+        <Section13Seller />
+        <div class="section-image">
+          <img
+            data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/cold-calling.webp"
+            data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/cold-calling.jpg"
+            class="effect1 lazy"
+            alt="Cold Calling"
+            src="//dlbf54swf3l6o.cloudfront.net/images/funnels/cold-calling.webp"
+          />
+        </div>
       </section>
 
       <section class="section-grid section-container">
-        <VideoSection />
-        <VideoSection />
+        <div class="section-image">
+          <img
+            data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.webp"
+            data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.png"
+            class="effect1 lazy"
+            alt="Automate Your Business"
+            src="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.webp"
+          />
+        </div>
+        <Section14Business />
       </section>
 
-      <ReviewsSection />
-      <FaqSection class="section-container" />
-      <FooterSection />
+      <section class="section-grid section-container">
+        <Section15Find />
+        <div class="section-image">
+          <img
+            data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/msdf_still1.webp"
+            data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/msdf_still1.png"
+            class="effect1 lazy"
+            alt="Hungry Buyers"
+            src="//dlbf54swf3l6o.cloudfront.net/images/funnels/msdf_still1.webp"
+          />
+        </div>
+      </section>
+
+      <div class="section-container">
+        <SectionReady />
+      </div>
+
+      <section class="section-grid section-container">
+        <SectionVideo />
+        <SectionVideo />
+      </section>
+
+      <Section16Reviews class="section-container" />
+      <Section17Faq class="section-container" />
+      <Section99Footer class="section-container" />
     </section>
-
-    <ChatBox />
   </div>
 </template>
 
