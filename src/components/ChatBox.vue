@@ -1,11 +1,11 @@
 <template>
   <div
-    class="fixed bottom-1/2 right-[-20px] z-[1000] font-sans translate-y-1/2"
+    class="fixed bottom-1/2 right-0 z-[1000] font-sans translate-y-1/2"
     :class="{ 'chat-box-open': isOpen }"
   >
     <!-- Chat Toggle Button - Only show when chat is closed -->
     <button
-      class="bg-[#dc1431] text-white border-none py-4 px-2 rounded-l-md cursor-pointer font-medium text-sm shadow-sm [writing-mode:vertical-rl] rotate-180"
+      class="bg-[#dc1431] text-white border-none py-4 px-2 rounded-r-md cursor-pointer font-medium text-sm shadow-sm [writing-mode:vertical-rl] rotate-180"
       @click="openChat"
       v-if="!isOpen"
     >
@@ -15,7 +15,7 @@
     <!-- Chat Window -->
     <Transition name="fade">
       <div
-        class="absolute right-10 top-1/2 w-80 h-[480px] bg-white rounded-lg shadow-lg flex flex-col text-gray-800 -translate-y-1/2 visible backface-hidden [will-change:transform,opacity,visibility]"
+        class="absolute right-0 top-0 w-80 h-[480px] bg-white rounded-lg shadow-lg flex flex-col text-gray-800 -translate-y-1/2 visible backface-hidden [will-change:transform,opacity,visibility]"
         v-if="isOpen"
       >
         <div

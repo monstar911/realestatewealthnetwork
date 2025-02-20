@@ -3,7 +3,7 @@
     class="bg-[rgb(96,96,96)] text-center py-8 flex justify-center items-center w-full"
   >
     <div class="container">
-      <div class="flex justify-center items-center gap-8 flex-wrap w-[1200px]">
+      <div class="flex justify-center items-center gap-8 flex-wrap max-w-[1200px]">
         <p class="text-[#888] mb-4 w-[12%]">Featured On</p>
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/misc/time2.webp"

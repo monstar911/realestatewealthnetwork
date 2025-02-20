@@ -139,10 +139,10 @@ const deadline = new Date("2024-03-20T23:59:59");
         We have the documentation to prove it, in the form of HUD statements.
         Don't miss out on this incredible opportunity.
       </p>
-      <section class="academy-info">
+      <!-- <section class="academy-info">
         <VideoSectionHUD />
         <FundingSection />
-      </section>
+      </section> -->
 
       <section class="academy-info">
         <HostSection />
