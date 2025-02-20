@@ -3,7 +3,7 @@
     <div class="py-5 m-0 outline-none">
       <div class="px-[10px]">
         <div class="mt-0 outline-none cursor-pointer">
-          <h1 class="text-left text-3xl">
+          <h1 class="text-center text-3xl">
             <b>Frequently Asked Questions...</b>
           </h1>
         </div>

@@ -64,7 +64,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         <VideoSection />
       </section>
 
-      <WhyNowSection />
+      <WhyNowSection class="container" />
 
       <p class="proof-caption">
         We have the documentation to prove it, in the form of HUD statements.
@@ -162,7 +162,7 @@ const deadline = new Date("2024-03-20T23:59:59");
       </section>
 
       <ReviewsSection />
-      <FaqSection />
+      <FaqSection class="container" />
       <FooterSection />
     </section>
 
