@@ -1,5 +1,5 @@
 <template>
-  <section class="p-8 rounded-lg">
+  <section class="p-8 text-[#2f2f2f] text-left text-3xl">
     <div class="py-5 m-0 outline-none">
       <div class="col-md-6 innerContent col_left ui-resizable outline-none">
         <div class="px-[10px]">

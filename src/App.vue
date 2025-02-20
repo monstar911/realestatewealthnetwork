@@ -56,38 +56,17 @@ const deadline = new Date("2024-03-20T23:59:59");
 
       <section class="academy-info">
         <WhenIsSection />
-        <div
-          class="col-md-6 innerContent col_right ui-resizable"
-          style="outline: none"
-        >
-          <div
-            class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
-            style="padding: 0 10px"
-          >
-            <div
-              class="de elHeadlineWrapper ui-droppable de-editable"
-              style="margin-top: 0px; outline: none; cursor: pointer"
-            >
-              <h1
-                class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0"
-                style="text-align: left; font-size: 32px; color: #2f2f2f"
-              >
+        <div class="col-md-6 innerContent col_right ui-resizable outline-none">
+          <div class="px-[10px]">
+            <div class="mt-0 outline-none cursor-pointer">
+              <h1 class="text-left text-[32px] text-[#2f2f2f]">
                 <b>WHEN Is The Virtual Wholesaling Academy</b>
               </h1>
             </div>
             <div
-              class="de elHeadlineWrapper ui-droppable de-editable"
-              style="
-                margin-top: 15px;
-                outline: none;
-                cursor: pointer;
-                font-family: 'Open Sans', Helvetica, sans-serif !important;
-              "
+              class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
             >
-              <h2
-                class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
-                style="text-align: left; font-size: 20px; color: #2f2f2f"
-              >
+              <h2 class="text-left text-xl text-[#2f2f2f]">
                 <p>
                   This three-day LIVE training is happening on March 18th thru
                   20th, 2025 from about 12pm to 6pm ET. It's not like any Zoom
@@ -101,27 +80,14 @@ const deadline = new Date("2024-03-20T23:59:59");
                 </p>
               </h2>
             </div>
-            <div
-              class="de elBTN elMargin0 ui-droppable elAlign_left de-editable"
-              style="margin-top: 35px; outline: none; cursor: pointer"
-            >
+            <div class="mt-[35px] outline-none cursor-pointer text-left">
               <a
                 href="setup.php"
-                class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnVP_10 elButtonCorner3 elButtonFluid elBtnHP_25 elBTN_b_1 elButtonShadowN1 elButtonTxtColor1 elBTNone elButtonBlock"
-                style="
-                  color: rgb(255, 255, 255);
-                  background: #30a05c;
-                  font-size: 20px;
-                "
+                class="block text-white bg-[#30a05c] text-xl rounded px-6 py-2.5 shadow"
                 rel="noopener noreferrer"
                 id="undefined-127-153-205"
               >
                 <CallToAction />
-                <!-- <span class="elButtonMain bodyBtn"
-                  >I'm Ready To Become a Virtual Wholesaler!<br /><span
-                    >Secure Your Spot For This 3-Day Masterclass Now!</span
-                  ></span
-                > -->
               </a>
             </div>
           </div>
@@ -139,10 +105,6 @@ const deadline = new Date("2024-03-20T23:59:59");
         We have the documentation to prove it, in the form of HUD statements.
         Don't miss out on this incredible opportunity.
       </p>
-      <!-- <section class="academy-info">
-        <VideoSectionHUD />
-        <FundingSection />
-      </section> -->
 
       <section class="academy-info">
         <HostSection />
@@ -163,38 +125,17 @@ const deadline = new Date("2024-03-20T23:59:59");
 
       <section class="academy-info">
         <MakeMoneySection />
-        <div
-          class="col-md-6 innerContent col_right ui-resizable"
-          style="outline: none"
-        >
-          <div
-            class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
-            style="padding: 0 10px"
-          >
-            <div
-              class="de elHeadlineWrapper ui-droppable de-editable"
-              style="margin-top: 0px; outline: none; cursor: pointer"
-            >
-              <h1
-                class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0"
-                style="text-align: left; font-size: 32px; color: #2f2f2f"
-              >
+        <div class="col-md-6 innerContent col_right ui-resizable outline-none">
+          <div class="px-[10px]">
+            <div class="mt-0 outline-none cursor-pointer">
+              <h1 class="text-left text-[32px] text-[#2f2f2f]">
                 <b>3 Ways To Make Money With Any Wholesale Lead</b>
               </h1>
             </div>
             <div
-              class="de elHeadlineWrapper ui-droppable de-editable"
-              style="
-                margin-top: 15px;
-                outline: none;
-                cursor: pointer;
-                font-family: 'Open Sans', Helvetica, sans-serif !important;
-              "
+              class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
             >
-              <h2
-                class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
-                style="text-align: left; font-size: 20px; color: #2f2f2f"
-              >
+              <h2 class="text-left text-xl text-[#2f2f2f]">
                 <p>
                   As a virtual wholesaler you'll be able to cherry pick deals.
                   In this session, we will explore strategies for making a
@@ -265,11 +206,12 @@ const deadline = new Date("2024-03-20T23:59:59");
 </template>
 
 <style>
+/* Move the layer definition to style.css and keep only the custom properties here */
 :root {
-  --chat-button-bg-color: #c2183f;
-  --chat-button-shadow-color: rgba(194, 24, 63, 0.3);
-  --chat-button-text-color: #ffffff;
-  --client-bubble-bg: #c2183f;
-  --client-transparent-bubble-bg: rgba(194, 24, 63, 0.08);
+  --chat-button-bg-color: theme("colors.red.600");
+  --chat-button-shadow-color: theme("colors.red.600/30");
+  --chat-button-text-color: theme("colors.white");
+  --client-bubble-bg: theme("colors.red.600");
+  --client-transparent-bubble-bg: theme("colors.red.600/8");
 }
 </style>
