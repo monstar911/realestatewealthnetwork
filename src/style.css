@@ -17,7 +17,6 @@
 
   --primary-color: rgb(48, 160, 92);
   --secondary-color: #ffd700;
-  /* --background-color: #1a3a3a; */
   --text-color: #ffffff;
   --container-width: 1200px;
 }
@@ -53,11 +52,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 2px;
   border: 1px solid transparent;
@@ -77,15 +71,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card {
-  padding: 2em;
-}
-
 #app {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
+  @apply w-full mx-auto p-0 text-center;
 }
 
 @media (prefers-color-scheme: light) {
@@ -101,17 +88,6 @@ button:focus-visible {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .section-container {
   @apply max-w-[var(--container-width)] mx-auto px-4 w-full;
 }
@@ -121,7 +97,7 @@ img {
 }
 
 .section-text-title {
-  @apply text-left text-3xl mb-6;
+  @apply text-left text-4xl mb-6;
 }
 
 .section-text-content {

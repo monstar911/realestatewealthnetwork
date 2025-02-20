@@ -1,5 +1,5 @@
 <template>
-  <section class="p-8 my-8 bg-black rounded-lg">
+  <section class="p-8 my-8 bg-black">
     <!-- Reviews Section -->
     <div>
       <h2 class="text-white text-4xl text-center mb-8">

@@ -1,26 +1,33 @@
 <template>
   <section class="section-text">
-    <h1 class="text-center text-3xl mb-6">
-      <b>Frequently Asked Questions...</b>
+    <h1 class="text-center text-4xl mb-6">
+      <b class="text-4xl">Frequently Asked Questions...</b>
     </h1>
-    <div
-      class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
-    >
-      <h2 class="text-left text-xl font-bold">
+    <div class="mt-[15px] outline-none font-['Open_Sans',Helvetica,sans-serif]">
+      <h2 class="text-left text-2xl font-bold flex justify-start">
+        <Icon
+          icon="mdi:question-mark-circle"
+          class="w-6 h-6 text-gray-900 mr-2"
+        />
         Is the content of this training brand new?
       </h2>
-      <h3>
-        <p class="section-text-content">
+
+      <h2
+        class="text-left text-2xl font-bold before:content-['\f059'] before:font-['Material_Design_Icons'] before:mr-2 before:text-gray-900 before:w-6 before:h-6 before:inline-block"
+      >
+        Is the content of this training brand new?
+      </h2>
+      <h3 class="section-text-content">
+        <p class="text-[18px] text-[rgba(44,52,61,0.75)]">
           Absolutely. This is a brand new event and unlike anything I've ever
           done before. The focus of the event is 100% designed to get you
           comfortable doing deals as a virtual wholesaler.
         </p>
       </h3>
     </div>
-    <div
-      class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
-    >
-      <h2 class="text-left text-xl font-bold">
+    <div class="mt-[15px] outline-none font-['Open_Sans',Helvetica,sans-serif]">
+      <h2 class="text-left text-2xl font-bold">
+        <Icon icon="mdi:question-mark-circle" class="w-6 h-6 text-gray-900" />
         Will Cam actually be the one teaching?
       </h2>
       <h3>
@@ -32,10 +39,9 @@
       </h3>
     </div>
 
-    <div
-      class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
-    >
+    <div class="mt-[15px] outline-none font-['Open_Sans',Helvetica,sans-serif]">
       <h2 class="text-left text-xl font-bold">
+        <Icon icon="mdi:question-mark-circle" class="w-6 h-6 text-gray-900" />
         Will you be going through the software tools?
       </h2>
       <h3>
@@ -45,10 +51,11 @@
       </h3>
     </div>
 
-    <div
-      class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
-    >
-      <h2 class="text-left text-xl font-bold">Can Anyone Attend This Event?</h2>
+    <div class="mt-[15px] outline-none font-['Open_Sans',Helvetica,sans-serif]">
+      <h2 class="text-left text-xl font-bold">
+        <Icon icon="mdi:question-mark-circle" class="w-6 h-6 text-gray-900" />
+        Can Anyone Attend This Event?
+      </h2>
       <h3>
         <p class="section-text-content">
           YES. This training is appropriate for all levels of investors. If you
@@ -58,10 +65,9 @@
       </h3>
     </div>
 
-    <div
-      class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
-    >
+    <div class="mt-[15px] outline-none font-['Open_Sans',Helvetica,sans-serif]">
       <h2 class="text-left text-xl font-bold">
+        <Icon icon="mdi:question-mark-circle" class="w-6 h-6 text-gray-900" />
         Can I Get A Refund If I Can't Attend?
       </h2>
       <h3>
@@ -73,10 +79,11 @@
       </h3>
     </div>
 
-    <div
-      class="mt-[15px] outline-none cursor-pointer font-['Open_Sans',Helvetica,sans-serif]"
-    >
-      <h2 class="text-left text-xl font-bold">Any Other Questions?</h2>
+    <div class="mt-[15px] outline-none font-['Open_Sans',Helvetica,sans-serif]">
+      <h2 class="text-left text-xl font-bold">
+        <Icon icon="mdi:question-mark-circle" class="w-6 h-6 text-gray-900" />
+        Any Other Questions?
+      </h2>
       <h3>
         <p class="section-text-content">
           Contact
@@ -84,10 +91,11 @@
         </p>
       </h3>
     </div>
-    <SectionReady />
+    <SectionReady class="mb-4" />
   </section>
 </template>
 
 <script setup lang="ts">
 import SectionReady from "./Section-Ready.vue";
+import { Icon } from "@iconify/vue";
 </script>

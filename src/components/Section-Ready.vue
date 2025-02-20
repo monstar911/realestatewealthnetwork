@@ -1,7 +1,7 @@
 <template>
   <section class="text-center mt-8">
     <button
-      class="bg-[rgb(48,160,92)] text-white text-[30px] font-bold px-[32px] py-[10px] cursor-pointer transition-colors duration-300 hover:bg-[#0085b2] rounded-[2px]"
+      class="bg-[rgb(48,160,92)] text-white text-[30px] font-bold px-[32px] py-[10px] cursor-pointer transition-colors duration-300 hover:bg-[#0085b2] rounded-[3px]"
       @click="handleClick"
     >
       I'm Ready To Become a Virtual Wholesaler!
