@@ -32,7 +32,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         background-image: url(https://dlbf54swf3l6o.cloudfront.net/images/backgrounds/vintage-grunge-blue-concrete-texture-studio-wall-background-with-vignette.jpg);
       "
     >
-      <div class="container">
+      <div class="section-container">
         <UrgentBanner
           message="This Special 'ALL HANDS' Training Is The Blueprint For Virtual Wholesaling During Uncertain Times..."
         />
@@ -48,29 +48,29 @@ const deadline = new Date("2024-03-20T23:59:59");
       <TrustBadges />
 
       <WinningSection />
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <WhatIsSection />
         <VideoSection />
       </section>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <CalandarSection />
         <WhenIsSection />
       </section>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <VideoSection />
         <VideoSection />
       </section>
 
-      <WhyNowSection class="container" />
+      <WhyNowSection class="section-container" />
 
       <p class="proof-caption">
         We have the documentation to prove it, in the form of HUD statements.
         Don't miss out on this incredible opportunity.
       </p>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <HostSection />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/cameron/cam-brick-wall.webp"
@@ -82,12 +82,12 @@ const deadline = new Date("2024-03-20T23:59:59");
         />
       </section>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <VideoSection />
         <VideoSection />
       </section>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <MakeMoneySection />
         <div class="col-md-6 innerContent col_right ui-resizable outline-none">
           <div class="px-[10px]">
@@ -122,7 +122,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         </div>
       </section>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <TopicsSection />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/cold-calling.webp"
@@ -133,7 +133,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         />
       </section>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.webp"
           data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/automate-your-business.png"
@@ -144,7 +144,7 @@ const deadline = new Date("2024-03-20T23:59:59");
         <AutomationSection />
       </section>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <FindSection />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/msdf_still1.webp"
@@ -155,13 +155,13 @@ const deadline = new Date("2024-03-20T23:59:59");
         />
       </section>
 
-      <section class="academy-info container">
+      <section class="section-grid section-container">
         <VideoSection />
         <VideoSection />
       </section>
 
       <ReviewsSection />
-      <FaqSection class="container" />
+      <FaqSection class="section-container" />
       <FooterSection />
     </section>
 

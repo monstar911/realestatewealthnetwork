@@ -112,18 +112,14 @@ img {
   height: auto;
 }
 
-/* Container utility class */
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 1rem;
-  width: 100%;
+.section-container {
+  @apply max-w-[var(--container-width)] mx-auto px-4 w-full;
 }
 
 .section-text {
   @apply text-[#2f2f2f] text-left text-3xl p-4 outline-none;
 }
 
-.academy-info {
+.section-grid {
   @apply w-full grid 3xl:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8 my-8 items-center;
 }

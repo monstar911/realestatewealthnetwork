@@ -2,7 +2,7 @@
   <section
     class="bg-[rgb(96,96,96)] text-center py-6 flex justify-center items-center w-full"
   >
-    <div class="container">
+    <div class="section-container">
       <div
         class="flex justify-center items-center gap-8 flex-wrap max-w-[1200px]"
       >

@@ -1,6 +1,6 @@
 <template>
   <section class="w-full text-center my-0">
-    <div class="container">
+    <div class="section-container">
       <h2
         class="text-[var(--highlight-color,rgb(255,277,0))] text-[34px] text-center italic font-bold leading-normal clear-both"
       >
