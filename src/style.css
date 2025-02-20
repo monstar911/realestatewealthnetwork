@@ -120,6 +120,14 @@ img {
   @apply text-[#2f2f2f] text-left text-3xl p-4 outline-none;
 }
 
+.section-text-title {
+  @apply text-left text-3xl mb-6;
+}
+
+.section-text-content {
+  @apply text-left text-xl my-3 font-['Open_Sans',Helvetica,sans-serif] leading-snug;
+}
+
 .section-image {
   @apply flex justify-center;
 }
