@@ -21,7 +21,11 @@
       </p>
     </h2>
 
-    <SectionReady />
+    <SectionReady
+      titleFontSize="22px"
+      contentFontSize="18px"
+      hoverColor="false"
+    />
   </section>
 </template>
 

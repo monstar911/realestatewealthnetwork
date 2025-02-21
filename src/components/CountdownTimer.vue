@@ -14,8 +14,8 @@
           :key="unit"
           class="text-[var(--highlight-color,rgb(255,277,0))] p-4 max-w-[80px]"
         >
-          <span class="text-5xl font-bold block">{{ value }}</span>
-          <span class="text-[var(--text-color,white)] text-sm opacity-80">{{
+          <span class="text-5xl font-bold block mb-6">{{ value }}</span>
+          <span class="text-[var(--text-color,white)] text-sm opacity-100">{{
             unit.toUpperCase()
           }}</span>
         </div>

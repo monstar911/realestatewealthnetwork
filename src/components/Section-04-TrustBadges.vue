@@ -10,21 +10,21 @@
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/misc/time2.webp"
           data-fallback="//dlbf54swf3l6o.cloudfront.net/images/misc/time2.png"
-          class="lazy w-[12%] opacity-70"
+          class="lazy w-[12%] opacity-100"
           alt="TIME"
           src="//dlbf54swf3l6o.cloudfront.net/images/misc/time2.webp"
         />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/misc/ent2.webp"
           data-fallback="//dlbf54swf3l6o.cloudfront.net/images/misc/ent2.png"
-          class="lazy w-[12%] opacity-70"
+          class="lazy w-[12%] opacity-100"
           alt="Entrepreneur"
           src="//dlbf54swf3l6o.cloudfront.net/images/misc/ent2.webp"
         />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/misc/USWeekly-2.webp"
           data-fallback="//dlbf54swf3l6o.cloudfront.net/images/misc/USWeekly-2.png"
-          class="lazy w-[12%] opacity-70"
+          class="lazy w-[12%] opacity-100"
           alt="US Weekly"
           width="100"
           src="//dlbf54swf3l6o.cloudfront.net/images/misc/USWeekly-2.webp"
@@ -32,14 +32,14 @@
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/misc/wash2.webp"
           data-fallback="//dlbf54swf3l6o.cloudfront.net/images/misc/wash2.png"
-          class="lazy w-[12%] opacity-70"
+          class="lazy w-[12%] opacity-100"
           alt="The Washington Times"
           src="//dlbf54swf3l6o.cloudfront.net/images/misc/wash2.webp"
         />
         <img
           data-src="//dlbf54swf3l6o.cloudfront.net/images/misc/usnews2.webp"
           data-fallback="//dlbf54swf3l6o.cloudfront.net/images/misc/usnews2.png"
-          class="lazy w-[12%] opacity-70"
+          class="lazy w-[12%] opacity-100"
           alt="U.S. News"
           src="//dlbf54swf3l6o.cloudfront.net/images/misc/usnews2.webp"
         />

@@ -18,7 +18,11 @@
     </h2>
 
     <a href="setup.php">
-      <SectionReady />
+      <SectionReady
+        titleFontSize="22px"
+        contentFontSize="18px"
+        hoverColor="false"
+      />
     </a>
   </section>
 </template>

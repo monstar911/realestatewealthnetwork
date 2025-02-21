@@ -40,7 +40,11 @@ const deadline = new Date("2024-03-20T23:59:59");
         />
         <Section02MainHeading />
         <SectionVideo />
-        <SectionReady />
+        <SectionReady
+          titleFontSize="30px"
+          contentFontSize="24px"
+          hoverColor="true"
+        />
         <Section03ProfitText />
       </div>
     </section>
@@ -149,7 +153,7 @@ const deadline = new Date("2024-03-20T23:59:59");
       </section>
 
       <div class="section-container">
-        <SectionReady />
+        <SectionReady titleFontSize="30px" contentFontSize="24px" />
       </div>
 
       <section class="section-grid section-container">
@@ -157,9 +161,9 @@ const deadline = new Date("2024-03-20T23:59:59");
         <SectionVideo />
       </section>
 
-      <Section16Reviews class="section-container" />
+      <Section16Reviews class="mx-auto px-4 w-full" />
       <Section17Faq class="section-container" />
-      <Section99Footer class="section-container" />
+      <Section99Footer class="mx-auto px-4 w-full" />
     </section>
   </div>
 </template>

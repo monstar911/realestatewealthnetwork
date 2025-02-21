@@ -17,7 +17,9 @@
       </p>
     </h2>
     <SectionReady
-      buttonText="Secure Your Spot For This 3-Day Masterclass Now!"
+      titleFontSize="22px"
+      contentFontSize="18px"
+      hoverColor="false"
     />
   </section>
 </template>
