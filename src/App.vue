@@ -20,7 +20,6 @@ import Section16Reviews from "./components/Section-16-Reviews.vue";
 import Section17Faq from "./components/Section-17-Faq.vue";
 import Section99Footer from "./components/Section-99-Footer.vue";
 import ChatBox from "./components/ChatBox.vue";
-const deadline = new Date("2024-03-20T23:59:59");
 import { onMounted } from "vue";
 
 onMounted(() => {

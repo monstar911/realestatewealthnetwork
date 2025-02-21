@@ -29,7 +29,7 @@ const handleClick = () => {
   console.log("Registration button clicked");
 };
 
-const props = defineProps<{
+defineProps<{
   titleFontSize: string;
   contentFontSize: string;
   hoverColor?: string;

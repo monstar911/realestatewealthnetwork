@@ -68,7 +68,7 @@ const loadWistiaScripts = async () => {
 
 onMounted(loadWistiaScripts);
 
-const props = defineProps<{
+defineProps<{
   title: string;
 }>();
 </script>
