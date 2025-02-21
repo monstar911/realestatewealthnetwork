@@ -28,15 +28,5 @@
         estate.
       </p>
     </h2>
-
-    <!-- <SectionReady
-      titleFontSize="30px"
-      contentFontSize="24px"
-      hoverColor="false"
-    /> -->
   </section>
 </template>
-
-<script setup lang="ts">
-import SectionReady from "./Section-Ready.vue";
-</script>
