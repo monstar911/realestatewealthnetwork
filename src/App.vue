@@ -70,6 +70,13 @@ const deadline = new Date("2024-03-20T23:59:59");
       </section>
 
       <Section09Why class="section-container" />
+      <div class="section-container mt-0 mb-8">
+        <SectionReady
+          titleFontSize="30px"
+          contentFontSize="24px"
+          hoverColor="false"
+        />
+      </div>
 
       <section class="section-grid section-container">
         <SectionVideo />
@@ -163,6 +170,14 @@ const deadline = new Date("2024-03-20T23:59:59");
 
       <Section16Reviews class="mx-auto px-4 w-full" />
       <Section17Faq class="section-container" />
+      <div class="section-container mt-0 mb-10">
+        <SectionReady
+          titleFontSize="30px"
+          contentFontSize="24px"
+          hoverColor="false"
+        />
+      </div>
+
       <Section99Footer class="mx-auto px-4 w-full" />
     </section>
   </div>

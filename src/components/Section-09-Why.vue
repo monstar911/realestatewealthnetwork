@@ -29,11 +29,11 @@
       </p>
     </h2>
 
-    <SectionReady
+    <!-- <SectionReady
       titleFontSize="30px"
       contentFontSize="24px"
       hoverColor="false"
-    />
+    /> -->
   </section>
 </template>
 

@@ -83,7 +83,7 @@
         </p>
       </h3>
     </div>
-    <SectionReady class="mb-4" titleFontSize="30px" contentFontSize="24px" />
+    <!-- <SectionReady class="mb-4" titleFontSize="30px" contentFontSize="24px" /> -->
   </section>
 </template>
 

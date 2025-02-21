@@ -2,7 +2,7 @@
   <section class="p-8 my-8 bg-black">
     <!-- Reviews Section -->
     <div>
-      <h2 class="text-white text-4xl text-center mb-8">
+      <h2 class="text-white text-4xl text-bold text-center mb-8">
         Over
         <span class="border-b-2 border-white">FIVE Star Reviews</span> Can't Be
         Wrong...
