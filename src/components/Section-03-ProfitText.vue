@@ -1,5 +1,5 @@
 <template>
-  <section class="text-center py-6">
+  <section class="text-center py-10">
     <p
       class="text-[rgb(255,277,0)] mx-auto text-[26px] leading-[1.3em] font-patrick-hand line-height-1.3em"
     >

@@ -1,5 +1,5 @@
 <template>
-  <section class="section-text">
+  <section class="mt-16 section-text">
     <h1 class="section-text-title">
       <b>WHY Now?</b>
     </h1>

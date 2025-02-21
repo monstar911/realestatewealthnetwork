@@ -16,13 +16,19 @@
             msallowfullscreen
           ></iframe>
         </div>
+
+        <p
+          class="text-center text-[#2f2f2f] text-xl my-2 font-['Open_Sans',Helvetica,sans-serif]"
+        >
+          {{ title }}
+        </p>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { onMounted, defineProps } from "vue";
 
 const WISTIA_SCRIPT_ID = "wistia-ev";
 const PLAYBACK_SCRIPT_ID = "wistia-playback";
@@ -61,4 +67,8 @@ const loadWistiaScripts = async () => {
 };
 
 onMounted(loadWistiaScripts);
+
+const props = defineProps<{
+  title: string;
+}>();
 </script>

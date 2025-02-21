@@ -93,7 +93,7 @@ button:focus-visible {
 }
 
 .section-text {
-  @apply text-[#2f2f2f] text-left text-3xl p-4 outline-none;
+  @apply text-[#2f2f2f] text-left text-3xl outline-none;
 }
 
 .section-text-title {
@@ -109,7 +109,7 @@ button:focus-visible {
 }
 
 .section-grid {
-  @apply w-full grid 3xl:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8 my-4 items-center;
+  @apply w-full grid 3xl:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-12 my-4 items-center;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

@@ -21,6 +21,42 @@ import Section17Faq from "./components/Section-17-Faq.vue";
 import Section99Footer from "./components/Section-99-Footer.vue";
 import ChatBox from "./components/ChatBox.vue";
 const deadline = new Date("2024-03-20T23:59:59");
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const videoElements = document.querySelectorAll(".video-section");
+
+  window.addEventListener("scroll", () => {
+    let isInView = false;
+    let chatElement = document.getElementById("chat-toggle-button");
+    let chatBoxElement = document.getElementById("chat-box");
+    videoElements.forEach((videoElement) => {
+      const rect = videoElement.getBoundingClientRect();
+
+      // Check if the element is in view
+      if (
+        rect.bottom - rect.height / 2 >= 0 &&
+        rect.top + rect.height / 2 <= window.innerHeight
+      ) {
+        isInView = true;
+      }
+    });
+    if (chatElement) {
+      if (isInView) {
+        chatElement.style.display = "none";
+      } else {
+        chatElement.style.display = "flex";
+      }
+    }
+    if (chatBoxElement) {
+      if (isInView) {
+        chatBoxElement.style.display = "none";
+      } else {
+        chatBoxElement.style.display = "block";
+      }
+    }
+  });
+});
 </script>
 
 <template>
@@ -39,7 +75,7 @@ const deadline = new Date("2024-03-20T23:59:59");
           message="This Special 'ALL HANDS' Training Is The Blueprint For Virtual Wholesaling During Uncertain Times..."
         />
         <Section02MainHeading />
-        <SectionVideo />
+        <SectionVideo title="" />
         <SectionReady
           titleFontSize="30px"
           contentFontSize="24px"
@@ -56,7 +92,7 @@ const deadline = new Date("2024-03-20T23:59:59");
     <section class="flex flex-col items-center w-full">
       <section class="section-grid section-container">
         <Section06What />
-        <SectionVideo />
+        <SectionVideo title="(See more funding interviews below)" />
       </section>
 
       <section class="section-grid section-container">
@@ -64,9 +100,17 @@ const deadline = new Date("2024-03-20T23:59:59");
         <Section08When />
       </section>
 
-      <section class="section-grid section-container">
-        <SectionVideo />
-        <SectionVideo />
+      <section class="mx-auto px-4 w-full p-8 mt-8 bg-black">
+        <h2
+          class="mt-16 text-center text-4xl text-white font-['Open_Sans',Helvetica,sans-serif]"
+        >
+          They did it, So can you
+        </h2>
+
+        <section class="section-grid section-container video-section">
+          <SectionVideo title="" />
+          <SectionVideo title="" />
+        </section>
       </section>
 
       <Section09Why class="section-container" />
@@ -79,14 +123,11 @@ const deadline = new Date("2024-03-20T23:59:59");
       </div>
 
       <section class="section-grid section-container">
-        <SectionVideo />
+        <SectionVideo
+          title="We have the documentation to prove it, in the form of HUD statements. Don't miss out on this incredible opportunity."
+        />
         <Section10Give />
       </section>
-
-      <p class="proof-caption">
-        We have the documentation to prove it, in the form of HUD statements.
-        Don't miss out on this incredible opportunity.
-      </p>
 
       <section class="section-grid section-container">
         <Section11Host />
@@ -102,13 +143,21 @@ const deadline = new Date("2024-03-20T23:59:59");
         </div>
       </section>
 
-      <section class="section-grid section-container">
-        <SectionVideo />
-        <SectionVideo />
+      <section class="mx-auto px-4 w-full p-8 mt-8 bg-black">
+        <h2
+          class="mt-16 text-center text-4xl text-white font-['Open_Sans',Helvetica,sans-serif]"
+        >
+          Learn how they did it
+        </h2>
+
+        <section class="section-grid section-container video-section">
+          <SectionVideo title="" />
+          <SectionVideo title="" />
+        </section>
       </section>
 
       <section class="section-grid section-container">
-        <div class="section-image">
+        <div class="mt-8 section-image">
           <img
             data-src="//dlbf54swf3l6o.cloudfront.net/images/funnels/investor-thoughts.webp"
             data-fallback="//dlbf54swf3l6o.cloudfront.net/images/funnels/investor-thoughts.jpg"
@@ -163,9 +212,17 @@ const deadline = new Date("2024-03-20T23:59:59");
         <SectionReady titleFontSize="30px" contentFontSize="24px" />
       </div>
 
-      <section class="section-grid section-container">
-        <SectionVideo />
-        <SectionVideo />
+      <section class="mx-auto px-4 w-full p-8 mt-8 bg-black">
+        <h2
+          class="mt-16 text-center text-4xl text-white font-['Open_Sans',Helvetica,sans-serif]"
+        >
+          Use The Knowledge, Create Your Own Story
+        </h2>
+
+        <section class="section-grid section-container video-section">
+          <SectionVideo title="" />
+          <SectionVideo title="" />
+        </section>
       </section>
 
       <Section16Reviews class="mx-auto px-4 w-full" />

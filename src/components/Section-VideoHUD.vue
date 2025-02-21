@@ -33,10 +33,10 @@
           </div>
         </div>
       </div>
-      <div class="text-black">
+      <!-- <div class="text-black">
         We have the documentation to prove it, in the form of HUD statements.
         Don't miss out on this incredible opportunity.
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
